@@ -59,10 +59,6 @@ a {
     text-decoration: none;
 }
 
-.stuck {
-    overflow: hidden;
-}
-
 body {
     font-family: "Montserrat", sans-serif;
     color: $dark;
@@ -106,7 +102,6 @@ body {
     &.stuck {
         position: fixed;
         top: 26px;
-        overflow: visible !important;
     }
     &-content {
         display: grid;
@@ -886,7 +881,6 @@ body {
     }
     &__btn {
         color: $yellow;
-        background-color: #fff;
     }
     &__policy {
         font-weight: 400;
@@ -1138,147 +1132,6 @@ body {
         & input {
             width: 100%;
         }
-    }
-}
-
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-    justify-content: center;
-    z-index: 120;
-    overflow-y: auto;
-    &-content {
-        width: 853px;
-        max-width: 853px;
-        margin: 80px auto 100px;
-        position: relative;
-    }
-    &-box {
-        border-radius: 60px;
-        background: #fff;
-        padding: 76px 52px 63px;
-        width: 100%;
-    }
-    &-close {
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        top: 35px;
-        right: 39px;
-        cursor: pointer;
-    }
-    &-line {
-        position: relative;
-        &::before, &::after {
-            content: '';
-            background: #000;
-            width: 100%;
-            height: 1px;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-        &::before {
-            transform: rotate(45deg);
-        }
-        &::after {
-            transform: rotate(-45deg);
-        }
-    }
-    &-bottom {
-        padding: 41px 48px 35px;
-        border-radius: 60px;
-        background: rgba(255, 255, 255, 0.7);
-        backdrop-filter: blur(8.5px);
-        margin-top: 24px;
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-auto-flow: column;
-        justify-content: space-between;
-        align-items: center;
-        &__title {
-            font-weight: 700;
-            font-size: 22px;
-            line-height: 27px;
-            color: #000000;
-        }
-        &__items {
-            display: grid;
-            grid-template-columns: max-content;
-            grid-auto-flow: column;
-            gap: 19px;
-        }
-        &__item {
-            font-weight: 400;
-            padding: 23px 30px;
-            cursor: pointer;
-            font-size: 18px;
-            line-height: 150%;
-            color: #000;
-            text-align: center;
-            background: #FFFFFF;
-            border-radius: 136px;
-        }
-    }
-    &-title {
-        font-weight: 700;
-        font-size: 42px;
-        line-height: 51px;
-        text-align: center;
-        color: #000;
-    }
-    &-subtitle {
-        font-weight: 400;
-        font-size: 19px;
-        line-height: 23px;
-        text-align: center;
-        color: #000000;
-        opacity: 0.7;
-        margin: 20px 0 63px;
-    }
-    &-block {
-        width: 100%;
-    }
-    &.none-more {
-        & .modal-more {
-            display: none;
-        }
-    }
-    &.none-try {
-        & .modal-try {
-            display: none;
-        }
-    }
-    &.none {
-        display: none;
-    }
-    & button {
-        background: $yellow;
-    }
-}
-
-.error {
-    text-align: center;
-    padding-bottom: 122px;
-    &-info {
-        text-align: center;
-        margin-top: -40px;
-    }
-    & img {
-        width: 100%;
-    }
-    &-title {
-        margin-bottom: 35px;
-    }
-    &-btn {
-        margin: 0 auto;
-        background: $yellow;
     }
 }
 
@@ -1732,24 +1585,6 @@ body {
             max-width: 100%;
         }
     }
-    .modal {
-        &-content {
-            width: 90%;
-            max-width: 90%;
-        }
-        &-bottom {
-            grid-template-columns: auto;
-            grid-auto-flow: row;
-            gap: 22px;
-            padding: 23px 25px 11px;
-            border-radius: 28px;
-            &__item {
-                font-weight: 400;
-                font-size: 13.7952px;
-                line-height: 150%;
-            }
-        }
-    }
 }
 
 @media(max-width: 800px) {
@@ -2024,9 +1859,6 @@ body {
                 }
             }
         }
-        &-text, &-dots {
-            display: none;
-        }
     }
     .footer {
         &-icon {
@@ -2159,53 +1991,6 @@ body {
             }
         }
     }
-    .open {
-        padding-bottom: 127px;
-    }
-    .modal {
-        &-content {
-            width: 100%;
-            padding-left: 6px;
-            padding-right: 6px;
-            max-width: 100%;
-            margin: 40px auto 60px;
-        }
-        &-bottom {
-            &__items {
-                gap: 14px;
-            }
-            &__item {
-                padding: 18px 23px;
-            }
-        }
-        &-title {
-            font-size: 22px;
-            line-height: 27px;
-            margin-bottom: 35px;
-        }
-        &-subtitle {
-            display: none;
-        }
-        &-box {
-            padding: 82px 17px 54px;
-        }
-    }
-    .error {
-        padding-bottom: 156px;
-        &-info {
-            margin-top: 0px;
-        }
-        &-title {
-            font-size: 28px;
-            line-height: 34px;
-        }
-    }
-}
-
-@media(max-width: 600px) {
-    html {
-        margin-top: 0px !important;
-    }
 }
 
 @media(max-width: 500px) {
@@ -2309,22 +2094,8 @@ body {
             margin: 0 18px;
         }
     }
-    .open {
-        &-info {
-            grid-template-columns: auto;
-            grid-auto-flow: row;
-            gap: 13px;
-            &__title {
-                margin-bottom: 6px;
-            }
-        }
-        &-bottom {
-            margin-top: 55px;
-            padding-top: 23px;
-        }
-        &-subtitle {
-            margin: 30px 0;
-        }
+    button {
+        
     }
 }
 
@@ -2341,21 +2112,6 @@ body {
             font-size: 12px;
             line-height: 15px;
         }
-    }
-    .modal {
-        &-box {
-            border-radius: 28px;
-        }
-        &-bottom {
-            &__items {
-                width: 100%;
-                grid-template-columns: repeat(2, 50%);
-                grid-auto-flow: row;
-            }
-        }
-    }
-    .box {
-        margin: 0 15px;
     }
 }
 

@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HONEY CORN</title>
-    <link rel="icon" href="./img/logo/head-icon.svg">
-    <link rel="stylesheet" href="./css/reset.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+<?php
+/*
+Template Name: home
+*/
+
+?>
+
+<?php get_header(); ?>
     
     <main class="main page">
 
@@ -19,7 +15,7 @@
 
                 <div class="contact-content">
 
-                   <div class="contact-top">
+                    <div class="contact-top">
 
                         <div class="contact-l">
 
@@ -28,7 +24,7 @@
                             <div class="footer-items">
 
                                 <div class="footer-contact">
-    
+
                                     <div class="footer-item">
         
                                         <div class="footer-icon">
@@ -69,36 +65,36 @@
                                             <p class="footer-item__title">Адрес</p>
                                             <a href="tel: +7 (383) 225-3-225" title="Адрес" aria-label="adress" class="footer-item__link">г. Новосибирск, Авиастроителей 39б</a>
                                         </div>
-    
+
                                     </div>
         
                                 </div>
-    
+
                                 <div class="footer-soc">
-    
+
                                     <a href="#" title="Перейти в телеграм" aria-label="telegram" class="footer-icon">
                                         <img src="./img/footer/telegram.svg" alt="telegram">
                                     </a>
-    
+
                                     <a href="#" title="Перейти в Дзен" aria-label="dzen" class="footer-icon">
                                         <img src="./img/footer/dzen.svg" alt="dzen">
                                     </a>
-    
+
                                 </div>
-    
+
                             </div>
 
                         </div>
 
                         <div class="contact-r">
-    
+
                             <img src="./img/contact/map.png" alt="map">
-    
+
                         </div>
 
-                   </div>
+                    </div>
 
-                   <div class="contact-bottom">
+                    <div class="contact-bottom">
 
                         <form action="" class="form">
 
@@ -145,7 +141,7 @@
 
                         </form>
 
-                   </div>
+                    </div>
 
                 </div>
 
@@ -155,7 +151,4 @@
 
     </main>
 
-    <script src="./script/script.js"></script>
-
-</body>
-</html>
+<?php get_footer();?>

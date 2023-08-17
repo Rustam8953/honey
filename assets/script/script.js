@@ -61,14 +61,14 @@ const bannerSwip = new Swiper('.banner-swiper', {
 
 
 window.addEventListener('resize', () => {
-  img(functionImg, './img/function/Group 229.png', './img/function/mobile.png')
-  img(bannerImg, './img/banner/Group.png', './img/banner/mobile-banner.png')
+  img(functionImg, 'http://honey.newway.site/wp-content/themes/honey/assets/img/function/Group 229.png', 'http://honey.newway.site/wp-content/themes/honey/assets/img/function/mobile.png')
+  img(bannerImg, 'http://honey.newway.site/wp-content/themes/honey/assets/img/banner/Group.png', 'http://honey.newway.site/wp-content/themes/honey/assets/img/banner/mobile-banner.png')
   swipe()
 })
 
 window.addEventListener('DOMContentLoaded', () => {
-  img(functionImg, './img/function/Group 229.png', './img/function/mobile.png')
-  img(bannerImg, './img/banner/Group.png', './img/banner/mobile-banner.png')
+  img(functionImg, 'http://honey.newway.site/wp-content/themes/honey/assets/img/function/Group 229.png', 'http://honey.newway.site/wp-content/themes/honey/assets/img/function/mobile.png')
+  img(bannerImg, 'http://honey.newway.site/wp-content/themes/honey/assets/img/banner/Group.png', 'http://honey.newway.site/wp-content/themes/honey/assets/img/banner/mobile-banner.png')
   swipe()
 })
 
@@ -134,8 +134,12 @@ function swipe() {
               slidesPerView: 2,
               spaceBetween: 20
             },
-            0: {
+            400: {
               slidesPerView: 1.4,
+              spaceBetween: 20
+            },
+            0: {
+              slidesPerView: 1,
               spaceBetween: 20
             }
           },
